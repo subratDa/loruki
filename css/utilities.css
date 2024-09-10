@@ -49,17 +49,74 @@
     height: 100%;
   }
   
-  .grid-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .bg-primary,
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
 
-  .my-1 {
-    margin: 1rem 0;
-  }
+.bg-secondary,
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
 
-  .my-2 {
-    margin: 1.5rem 0;
-  }
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+   margin: 1.5rem 0;
+}
   
   .my-3 {
     margin: 2rem 0;
