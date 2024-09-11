@@ -33,19 +33,22 @@
 
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                  <form>
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="text" name="company" placeholder="Company Name" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="Email" required>
-                    </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="b8ba35cb-4b13-4c10-9e35-987bb49e157b">
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                  <div class="form-control">
+                    <input type="text" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-control">
+                    <input type="text" name="company" placeholder="Company Name" required>
+                  </div>
+                  <div class="form-control">
+                    <input type="email" name="email" placeholder="Email" required>
+                  </div>
+                  
+
+                  <input type="submit" value="Send" class="btn btn-primary">
                 </form>
-                
             </div>
         </div>
     </section>
@@ -139,28 +142,58 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>Loruki
-                </h1>
-                <p>Copyright &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="docs.html">Docs</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            </div>
+   <!-- Footer -->
+<footer class="footer bg-gradient py-5">
+    <div class="container grid grid-4">
+        <!-- Logo and Copyright -->
+        <div>
+            <h1>Loruki</h1>
+            <p>Cloud Hosting for Everyone</p>
+            <p>Copyright &copy; 2024 by Loruki</p>
         </div>
-    </footer>
+
+        <!-- Navigation Links -->
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="docs.html">Docs</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div>
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="mailto:support@loruki.com">support@loruki.com</a></li>
+                <li><a href="tel:+1234567890">+1 234 567 890</a></li>
+                <li><a href="index.html">Request Demo</a></li>
+            </ul>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509375!2d144.95373531532146!3d-37.81720974202101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577bdf7d75a2b5f!2sFederation+Square!5e0!3m2!1sen!2sin!4v1616457691436!5m2!1sen!2sin" 
+                width="100%" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://github.com/subratDa/loruki.git" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
